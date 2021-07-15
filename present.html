@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>9 кругов ада</title>
+	<link rel="icon" href="foto/logo/logo0.png">
+	<link rel="stylesheet" type="text/css" href="present.css">
+</head>
+<body>
+	<div class="end">
+		<p class="p1">Подведем итоги конкурса</p>
+		<p class="p2">Наш победитель: ⁨annaquaticsomething⁩ ;</p>
+		<p class="p3">Время прохожжения: 4мс;</p>
+		<p class="p4">И с этой секунды, мы принимаем тебя к себе annaquaticsomething⁩.
+			К нам как нового участника и члена семьи. А также мы хотим поздравить тебя с твоим днем рождения!</p>
+		<img class="img1" src="foto/happy_birthday/cupcake-birthday.png">
+		<img class="img2" src="foto/happy_birthday/birthday-cake.png">
+		<img class="img6" src="foto/happy_birthday/stamp.png">
+	</div>
+
+	<div class="block_start">
+		<video autoplay="true" loop="true" muted="muted"><source src="foto/video and foto/video1.mp4" type='video/mp4'></video>
+		<img class="layer" data-speed="5" src="foto/happy_birthday/paper-birthday.png">
+	</div>
+
+	<div class="video1">
+		<img src="foto/decor/art-label.png">
+		<video class="video" src="foto/video and foto/video2.mp4" autoplay="true" loop="true" muted="muted"></video>
+		<a href="#img1_click-for-video">
+			<img class="button" src="foto/video and foto/piano.png">
+		</a>
+		<a href="#" class="lightbox" id="img1_click-for-video">
+			<span><video controls="true" src="foto/video and foto/video.mp4"></video></span>
+		</a>
+	</div>
+
+	<div class="present">
+		<div class="first">
+			<button><p>Подарок от Mr "X"</p></button>
+			<p class="p">Мой тебе подарок, много свежого воздуха</p>
+			<img class="img1" src="foto/air/balloon.png">
+			<img class="img3" src="foto/air/changsha-balloon.png">
+			<img class="img6" src="foto/air/island.png">
+			<img class="img7" src="foto/air/plane.png">
+			<img class="img8" src="foto/air/trees.png">
+		</div>
+
+		<div class="second">
+			<button><p>Подарок от Снайпер очкастый</p></button>
+			<p class="p">Мой тебе подарок, много чая и пелемешек</p>
+			<img class="img1" src="foto/tea/black-tea.png">
+			<img class="img2" src="foto/tea/garden-tea.png">
+			<img class="img3" src="foto/tea/green-tea.png">
+			<img class="img6" src="foto/tea/lemon.png">
+			<img class="img8" src="foto/tea/tree.png">
+			<img class="img11" src="foto/food/mandu.png">
+		</div>
+
+		<div class="third">
+			<button><p>Подарок от User is not found</p></button>
+			<img class="img1" src="foto/vine/beer.png">
+			<img class="img2" src="foto/vine/bottle-wine.png">
+			<img class="img3" src="foto/vine/champagne.png">
+			<img class="img5" src="foto/vine/grape.png">
+			<img class="img6" src="foto/vine/grape-vine.png">
+			<img class="img7" src="foto/vine/text.png">
+		</div>
+
+		<div class="ford">
+			<button><p>Подарок от Петр Александрович</p></button>
+			<p class="p">Мой тебе подарок, много стрел из ДжоДжо</p>
+			<img class="img1" src="foto/jojo/Bow_and_arrow.png">
+			<img class="img3" src="foto/jojo/jelery.png">
+			<img class="img4" src="foto/jojo/jojo.png">
+			<img class="img5" src="foto/jojo/JoJo-removebg-preview.png">
+			<img class="img9" src="foto/jojo/person2.png">
+			<img class="img10" src="foto/jojo/person3.png">
+		</div>
+
+		<div class="fifth">
+			<button><p>Подарок от Ники Хакер</p></button>
+			<p class="p">Мой тебе подарок, всего и по немножку</p>
+			<img class="img2" src="foto/food/chocolate-cake.png">
+			<img class="img4" src="foto/food/ice-cream.png">
+			<img class="img5" src="foto/food/lollipop.png">
+			<img class="img6" src="foto/food/macaron.png">
+			<img class="img9" src="foto/food/toast-chocolate.png">
+		</div>
+	</div>
+
+
+	<div class="galery">
+		<p>"Мини" галерея</p>
+		<img class="img0" src="foto/video and foto/cake.png">
+		<img class="img1" src="foto/video and foto/present.jpg">
+	</div>
+
+
+
+	<script>
+		document.addEventListener("mousemove", parallax);
+		 function parallax(e){
+		 	this.querySelectorAll('.layer').forEach(layer => {
+		 		const speed = layer.getAttribute('data-speed')
+
+		 		const x = (window.innerWidth - e.pageX*speed)/100
+		 		const y = (window.innerWidth - e.pageY*speed)/100
+
+		 		layer.style.transform = `translateX(${x}px) 
+		 		                         translateY(${y}px)`
+		 	})
+		 }
+	</script>
+</body>
+</html>
